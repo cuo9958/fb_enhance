@@ -19,7 +19,7 @@ $(function () {
 //获取当前页面
 function getCurr() {
     return new Promise((resolve, reject) => {
-        chrome.tabs.query({ active: true }, function (tab) {
+        chrome.tabs.query({ active: true, currentWindow: true }, function (tab) {
             console.log(tab);
             if (tab.length === 0) {
                 reject("没有获取到网页");

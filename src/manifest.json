@@ -19,10 +19,10 @@
     },
     "content_scripts": [
         {
-            "matches": ["https://business.facebook.com/*", "https://www.facebook.com/ads/*"],
+            "matches": ["https://business.facebook.com/*", "https://www.facebook.com/ads/*", "https://www.facebook.com/adsmanager/*"],
             "js": ["js/jquery.min.js", "js/content-script.js"],
             "css": ["css/custom.css"],
-            "run_at": "document_start"
+            "run_at": "document_end"
         }
     ],
     "permissions": ["contextMenus", "tabs", "notifications", "webRequest", "webRequestBlocking", "storage", "http://*/*", "https://*/*", "cookies"],
