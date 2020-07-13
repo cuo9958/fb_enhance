@@ -1,0 +1,10 @@
+#popup {
+    padding: 0;
+}
+.list {
+    padding: 5px;
+}
+.bottom {
+    padding: 5px;
+    display: flex;
+}

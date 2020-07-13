@@ -5,36 +5,27 @@
     "description": "简单的Chrome扩展demo",
     "homepage_url": "https://www.baidu.com",
     "icons": {
-        "16": "img/icon.png",
-        "48": "img/icon.png",
-        "128": "img/icon.png"
+        "16": "img/logo.png",
+        "48": "img/logo.png",
+        "128": "img/logo.png"
     },
     "background": {
         "scripts": ["js/background.js"]
     },
     "browser_action": {
-        "default_icon": "img/icon.png",
+        "default_icon": "img/logo.png",
         "default_title": "这是一个示例Chrome插件",
         "default_popup": "popup.html"
     },
     "content_scripts": [
         {
-            "matches": ["http://business.facebook.com/*"],
-            "js": ["js/jquery-1.8.3.js", "js/content-script.js"],
+            "matches": ["https://business.facebook.com/*"],
+            "js": ["js/jquery.min.js", "js/content-script.js"],
             "css": ["css/custom.css"],
             "run_at": "document_start"
         }
     ],
-    "permissions": [
-        "contextMenus",
-        "tabs",
-        "notifications",
-        "webRequest",
-        "webRequestBlocking",
-        "storage",
-        "http://*/*",
-        "https://*/*"
-    ],
+    "permissions": ["contextMenus", "tabs", "notifications", "webRequest", "webRequestBlocking", "storage", "http://*/*", "https://*/*", "cookies"],
     "web_accessible_resources": ["js/inject.js"],
     "options_ui": {
         "page": "options.html",
