@@ -13,7 +13,6 @@ $(function () {
         } catch (error) {
             alert(error.message);
         }
-
         // test();
     });
 });
@@ -42,7 +41,23 @@ function getCookies(url) {
         });
     });
 }
-function test() {}
+function test() {
+    // list.forEach((item) => {
+    //     const data = {
+    //         url,
+    //         domain: item.domain,
+    //         name: item.name,
+    //         value: item.value,
+    //         path: item.path,
+    //         secure: item.secure,
+    //         httpOnly: item.httpOnly,
+    //         expirationDate: item.expirationDate,
+    //     };
+    //     chrome.cookies.set(data, function (err) {
+    //         console.log(err);
+    //     });
+    // });
+}
 // // 读取数据，第一个参数是指定要读取的key以及设置默认值
 // chrome.storage.sync.get({color: 'red', age: 18}, function(items) {
 // 	console.log(items.color, items.age);
