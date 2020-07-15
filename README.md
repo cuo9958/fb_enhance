@@ -8,6 +8,8 @@ https://github.com/facebook/facebook-nodejs-business-sdk
 
 https://crxdoc-zh.appspot.com/extensions/api_index
 
+https://developers.facebook.com/docs/marketing-api/business-creative-asset-management/get-started
+
 ## 目标
 
 1. 自动切换账户
